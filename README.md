@@ -113,3 +113,56 @@ class Form extends Component<{}, {}> {
 
 const App:React.FC = () => <Form />;
 ```
+
+## Typing of Elements
+* event type for each method + html element type
+```typescript jsx
+handleInputChange = (e: React.ChangeEvent<HTMLInputElement>):void => {};
+handleTextareaChange = (e: React.ChangeEvent<HTMLTextAreaElement>):void => {};
+handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>):void => {};
+handleShow = (e: React.MouseEvent<HTMLButtonElement>):void => {};
+```
+* constant typing
+```typescript jsx
+type Position = {
+  id: string,
+  value: string,
+  title: string,
+}
+
+const POSITIONS: Array<Position> = [
+  {
+    id: 'fd',
+    value: 'Front-end Developer',
+    title: 'Front-end Developer',
+  },
+  {
+    id: 'bd',
+    value: 'Back-end Developer',
+    title: 'Back-end Developer',
+  }
+];
+```
+* styles typing
+```typescript jsx
+const styles: React.CSSProperties = { display: 'block', marginBottom: '10px' };
+```
+*  prop typing
+```typescript jsx
+type FormState = {
+  inputText: string,
+  textareaText: string,
+  selectText: string,
+  showData: {
+    name: string,
+    text: string,
+    position: string,
+  }
+}
+
+class Form extends Component<{}, FormState> {}
+```
+* link typing
+```typescript jsx
+rootRef = React.createRef<HTMLSelectElement>();
+```
