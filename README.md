@@ -168,3 +168,11 @@ rootRef = React.createRef<HTMLSelectElement>();
 ```
 
 ## Typing of Context & Portal
+
+## Typing of Hooks
+* useState
+* useRef
+* useContext
+* useReducer
+* useCallback & useMemo
+* useEffect & useLayoutEffect
