@@ -176,3 +176,5 @@ rootRef = React.createRef<HTMLSelectElement>();
 * useReducer
 * useCallback & useMemo
 * useEffect & useLayoutEffect
+
+## Typing of HOCs
