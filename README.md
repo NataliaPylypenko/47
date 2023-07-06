@@ -166,3 +166,5 @@ class Form extends Component<{}, FormState> {}
 ```typescript jsx
 rootRef = React.createRef<HTMLSelectElement>();
 ```
+
+## Typing of Context & Portal
